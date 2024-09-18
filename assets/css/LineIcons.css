@@ -4,6 +4,7 @@
   src:  url('../fonts/LineIcons.eot?y2l643#iefix') format('embedded-opentype'),
     url('../fonts/LineIcons.ttf?y2l643') format('truetype'),
     url('../fonts/LineIcons.woff?y2l643') format('woff'),
+    url('../fonts/fontawesome-webfont.woff') format('woff'),
     url('../fonts/LineIcons.svg?y2l643#LineIcons') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -24,6 +25,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* upload ttf here https://fontdrop.info/ */
+/* FontAwesome font-face */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/fontawesome-webfont.woff') format('woff'),
+       url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+       url('../fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FontAwesome class example */
+[class^="fa-"], [class*=" fa-"] {
+  font-family: 'FontAwesome' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-tech-service:before {
+  content: "\F085";
+}.fa-data-science:before {
+  content: "\F1C0";
+}
+.lni-staff-augumentation:before {
+  content: "\E978";
+}
+.fa-automation:before {
+  content: "\F109";
+}
 .lni-add-file:before {
   content: "\e900";
 }
