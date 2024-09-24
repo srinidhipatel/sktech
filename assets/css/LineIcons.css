@@ -26,6 +26,7 @@
 }
 
 /* upload ttf here https://fontdrop.info/ */
+/*Copied the code from https://preview.uideck.com/items/consult/#portfolio*/
 /* FontAwesome font-face */
 @font-face {
   font-family: 'FontAwesome';
@@ -50,6 +51,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.brand-img {
+  filter: sepia(1) saturate(10000%) hue-rotate(0deg) brightness(0.8);
+  color: #48309d;
+  }
 
 .fa-tech-service:before {
   content: "\F085";
